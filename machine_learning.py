@@ -1,0 +1,2 @@
+def isWorking():
+    return "yes"
