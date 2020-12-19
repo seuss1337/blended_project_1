@@ -51,7 +51,8 @@ Final group decision:  TBD
 
 # Dataset Communication Protocols
 
-[Raw .csv](https://github.com/seuss1337/blended_project_1/blob/feature/jt-schmidt/data/Life%20Expectancy%20Data.csv) loaded into [database](https://github.com/seuss1337/blended_project_1/blob/feature/jt-schmidt/data/LIFE_EXPECTANCY_DB.db) using [SQLite3](https://www.sqlite.org/index.html).  [Python](https://www.python.org/) with [SQLite3 library](https://docs.python.org/3/library/sqlite3.html) and loaded to [Pandas dataframe](https://pandas.pydata.org/).
+[Raw .csv](https://github.com/seuss1337/blended_project_1/blob/feature/jt-schmidt/data/Life%20Expectancy%20Data.csv) loaded into [database](https://github.com/seuss1337/blended_project_1/blob/feature/jt-schmidt/data/LIFE_EXPECTANCY_DB.db) using [SQLite3](https://www.sqlite.org/index.html).  
+[Python](https://www.python.org/) with [SQLite3 library](https://docs.python.org/3/library/sqlite3.html) and loaded to [Pandas dataframe](https://pandas.pydata.org/).
 
 ``` Python
 # Resources
