@@ -10,6 +10,7 @@ Contributors:
 
 ## Selected Topic: Life Expectancy Data Analysis
 
+<<<<<<< HEAD
 ## Reason
 During group formation & initial discussion, topic brainstorming ranged between:
 * Topics of interest; e.g. Spotify podcast, Texas industry growth
