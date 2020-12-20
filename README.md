@@ -5,8 +5,8 @@ Group repository:  https://github.com/seuss1337/blended_project_1
 
 Contributors:
 * https://github.com/seuss1337
-* https://github.com/ducluu27
-* https://github.com/jt-schmidt
+* https://github.com/ducluu27 https://www.linkedin.com/in/jpes/
+* https://github.com/jt-schmidt https://www.linkedin.com/in/jns04/
 
 ## Selected Topic: Life Expectancy Data Analysis
 
