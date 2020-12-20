@@ -39,12 +39,12 @@ Overall, result of this group project sets foundation for continued growth in le
 ## Proposed Questions
 
 Inspiration from kaggle source data:
-1. Does various predicting factors which has been chosen initially really affect the Life expectancy? What are the predicting variables actually affecting the life expectancy?
-2. Should a country having a lower life expectancy value(<65) increase its healthcare expenditure in order to improve its average lifespan?
-3. How does Infant and Adult mortality rates affect life expectancy?
-4. Does Life Expectancy has positive or negative correlation with eating habits, lifestyle, exercise, smoking, drinking alcohol etc.
+1. Do various predicting factors, which have been chosen initially, significantly impact the Life expectancy? What are the predicting variables that actually affect the life expectancy?
+2. Should a country, having a lower life expectancy value(<65), increase its healthcare expenditure in order to improve its average lifespan?
+3. How do Infant and Adult mortality rates affect life expectancy?
+4. Do eating habits, lifestyle, exercise, smoking, drinking alcohol etc. have positive or negative correlations with Life Expectancy?
 5. What is the impact of schooling on the lifespan of humans?
-6. Does Life Expectancy have positive or negative relationship with drinking alcohol?
+6. Does drinking alchohol have a positive or negative relationship with Life Expectancy?
 7. Do densely populated countries tend to have lower life expectancy?
 8. What is the impact of Immunization coverage on life Expectancy?
 
@@ -77,3 +77,5 @@ con.close()
 # Verify that result of SQL query is stored in the dataframe
 print(life_df.head(5))
 ```
+## Machine Learning Model
+The Life Expectancy Data, the output label is the Life Expectancy for a country. The input data would be the adult mortality rate, infant death, alcohol consumption, percentage expenditure on healthcare, Hepatits cases, Measles cases, BMI, and Polio cases.
