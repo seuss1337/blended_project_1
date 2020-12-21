@@ -24,6 +24,14 @@ print(life_df.head(5))
 # Dataframe types
 print(life_df.dtypes)
 
+# Filter for United States
+life_df = life_df[life_df["Country"] == 'United States of America']
+life_df.head()
+
+# FIll na with 0
+life_df = life_df.fillna(0)
+life_df.head()
+
 # Labeling input and output data
 y = life_df[life_df.columns[3]]
 X = life_df.Year.values.reshape(-1, 1)
