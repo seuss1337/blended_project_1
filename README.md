@@ -10,7 +10,6 @@ Contributors:
 
 ## Selected Topic: Life Expectancy Data Analysis
 
-<<<<<<< HEAD
 ## Reason
 During group formation & initial discussion, topic brainstorming ranged between:
 * Topics of interest; e.g. Spotify podcast, Texas industry growth
@@ -78,6 +77,6 @@ con.close()
 print(life_df.head(5))
 ```
 ## Machine Learning Model
-For the provisonal Machine Learning Model we created a simple linear regression model of the United States' life expectancy from 2000-2015. For the data input we used the year and the output was the life expectancy. 
+For the provisonal Machine Learning Model we created a simple linear regression model of the United States' life expectancy from 2000-2015. For the data input we used the year and the output was the life expectancy.
 
 ![Image](https://github.com/seuss1337/blended_project_1/blob/main/images/Linear%20Regression%20Model.png)

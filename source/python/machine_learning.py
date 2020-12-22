@@ -1,5 +1,5 @@
-#def isWorking():
- #   return "yes"
+# def isWorking():
+#   return "yes"
 # Resources
 import sqlite3
 import pandas as pd
@@ -9,7 +9,7 @@ con = sqlite3.connect("../../data/LIFE_EXPECTANCY_DB.db")
 cur = con.cursor()
 
 # The result of a "cursor.execute" can be iterated over by row
-for row in cur.execute('SELECT * FROM LIFE_EXPECTANCY_TABLE LIMIT 10;'):
+for row in cur.execute("SELECT * FROM LIFE_EXPECTANCY_TABLE LIMIT 10;"):
     print(row)
 
 # Read sqlite query results into a pandas DataFrame
@@ -25,7 +25,7 @@ print(life_df.head(5))
 print(life_df.dtypes)
 
 # Filter for United States
-life_df = life_df[life_df["Country"] == 'United States of America']
+life_df = life_df[life_df["Country"] == "United States of America"]
 life_df.head()
 
 # FIll na with 0
@@ -36,21 +36,21 @@ life_df.head()
 y = life_df[life_df.columns[3]]
 X = life_df.Year.values.reshape(-1, 1)
 
-#import stuff
+# import stuff
 from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
 
-#LinearRegression
+# LinearRegression
 model = LinearRegression()
 
-#Fit the model
+# Fit the model
 model.fit(X, y)
 
-#y_pred
+# y_pred
 y_pred = model.predict(X)
 print(y_pred.shape)
 
 # Graph the life expectancy
 plt.scatter(X, y)
-plt.plot(X, y_pred, color='red')
+plt.plot(X, y_pred, color="red")
 plt.show()
