@@ -21,11 +21,12 @@ app = Flask(__name__)
 
 @app.route("/", methods=["GET", "POST"])
 def welcome():
+    ML.run()
     return render_template("index.html")
-    if request.method == "POST":
-        print("button pressed")
-        ML.run()
-        return render_template("index.html")
+    # if request.method == "POST":
+    #    print("button pressed")
+    #    ML.run()
+    #    return render_template("index.html")
 
 
 app.run(debug=True)
