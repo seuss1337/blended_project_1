@@ -54,4 +54,4 @@ def run():
     plt.scatter(X, y)
     plt.plot(X, y_pred, color="red")
     plt.savefig("./static/plot.png")
-    plt.show()
+    # plt.show()
