@@ -4,6 +4,7 @@
 import sqlite3
 import pandas as pd
 
+
 def run():
     # Create a SQL connection to SQLite database
     con = sqlite3.connect("./data/LIFE_EXPECTANCY_DB.db")
@@ -52,4 +53,5 @@ def run():
     # def getPlot():
     plt.scatter(X, y)
     plt.plot(X, y_pred, color="red")
+    plt.savefig("./static/plot.png")
     plt.show()

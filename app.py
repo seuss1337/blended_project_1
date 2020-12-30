@@ -4,7 +4,7 @@ sys.path.append(os.path.dirname(os.path.realpath(__file__)) + "/source/python/")
 
 import io
 import random
-from flask import Flask, Response
+from flask import Flask, Response, render_template
 from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 from matplotlib.figure import Figure
 
@@ -22,9 +22,7 @@ app = Flask(__name__)
 @app.route("/")
 def welcome():
     ML.run()
-    return """
-    Testing
-    """
+    return render_template("index.html")
 
 
 app.run(debug=True)
