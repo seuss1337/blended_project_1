@@ -4,7 +4,6 @@
 import sqlite3
 import pandas as pd
 
-
 def run():
     # Create a SQL connection to SQLite database
     con = sqlite3.connect("./data/LIFE_EXPECTANCY_DB.db")

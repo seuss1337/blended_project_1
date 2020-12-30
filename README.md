@@ -10,7 +10,6 @@ Contributors:
 
 ## Selected Topic: Life Expectancy Data Analysis
 
-<<<<<<< HEAD
 ## Reason
 During group formation & initial discussion, topic brainstorming ranged between:
 * Topics of interest; e.g. Spotify podcast, Texas industry growth
@@ -39,12 +38,12 @@ Overall, result of this group project sets foundation for continued growth in le
 ## Proposed Questions
 
 Inspiration from kaggle source data:
-1. Does various predicting factors which has been chosen initially really affect the Life expectancy? What are the predicting variables actually affecting the life expectancy?
-2. Should a country having a lower life expectancy value(<65) increase its healthcare expenditure in order to improve its average lifespan?
-3. How does Infant and Adult mortality rates affect life expectancy?
-4. Does Life Expectancy has positive or negative correlation with eating habits, lifestyle, exercise, smoking, drinking alcohol etc.
+1. Do various predicting factors, which have been chosen initially, significantly impact the Life expectancy? What are the predicting variables that actually affect the life expectancy?
+2. Should a country, having a lower life expectancy value(<65), increase its healthcare expenditure in order to improve its average lifespan?
+3. How do Infant and Adult mortality rates affect life expectancy?
+4. Do eating habits, lifestyle, exercise, smoking, drinking alcohol etc. have positive or negative correlations with Life Expectancy?
 5. What is the impact of schooling on the lifespan of humans?
-6. Does Life Expectancy have positive or negative relationship with drinking alcohol?
+6. Does drinking alchohol have a positive or negative relationship with Life Expectancy?
 7. Do densely populated countries tend to have lower life expectancy?
 8. What is the impact of Immunization coverage on life Expectancy?
 
@@ -77,3 +76,7 @@ con.close()
 # Verify that result of SQL query is stored in the dataframe
 print(life_df.head(5))
 ```
+## Machine Learning Model
+For the provisonal Machine Learning Model we created a simple linear regression model of the United States' life expectancy from 2000-2015. For the data input we used the year and the output was the life expectancy.
+
+![Image](https://github.com/seuss1337/blended_project_1/blob/main/images/Linear%20Regression%20Model.png)
