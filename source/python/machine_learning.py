@@ -2,10 +2,11 @@
  #   return "yes"
 # Resources
 import sqlite3
+import os.path
 import pandas as pd
 
 # Create a SQL connection to SQLite database
-con = sqlite3.connect("../../data/LIFE_EXPECTANCY_DB.db")
+con = sqlite3.connect(os.path.abspath("../../data/LIFE_EXPECTANCY_DB.db"))
 cur = con.cursor()
 
 # The result of a "cursor.execute" can be iterated over by row
