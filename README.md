@@ -8,6 +8,9 @@ Contributors:
 * https://github.com/ducluu27 https://www.linkedin.com/in/jpes/
 * https://github.com/jt-schmidt https://www.linkedin.com/in/jns04/
 
+## Communication Protocols
+We communicated mainly through slack and occasionally text. 
+
 ## Selected Topic: Life Expectancy Data Analysis
 
 ## Reason
@@ -26,6 +29,7 @@ Ultimately, group determined focus of the assignment should be:
 Overall, result of this group project sets foundation for continued growth in learned concepts over past 24 weeks.
 
 ## Source Data Overview
+For this project we selected 2 data sets to merge. The first data we selected was life expectancy and the second one was world happiness. We will be merging these 2 datasets on the country and build a linear regression model.
 
 * Source data:  https://www.kaggle.com/kumarajarshi/life-expectancy-who
 * Single table:  LIFE EXPECTANCY (2938 rows x 22 columns, 325.63 KB)
@@ -33,9 +37,17 @@ Overall, result of this group project sets foundation for continued growth in le
 * 193 different countries
 * Variety of socioeconomic factors; e.g. immunization data, schooling, GDP
 
+* Source data: https://www.kaggle.com/unsdsn/world-happiness
+* Single table:  Happiness rank by scores and country in 2015 (158 rows x 12 columns, about 16.17 KB)
+* Table dated in 2015
+* 158 countries
+* Variety of factors such as economy GDP, family, health expectancy, freedom, etc. 
+* Happiness was measured on a scale of 1-10
+
 ![LIFE_EXPECTANCY_TABLE.png](https://github.com/seuss1337/blended_project_1/blob/feature/jt-schmidt/images/LIFE_EXPECTANCY_TABLE.png)
 
 ## Proposed Questions
+The question decided as a group was "What are the effect of urban population on happiness?" 
 
 Inspiration from kaggle source data:
 1. Do various predicting factors, which have been chosen initially, significantly impact the Life expectancy? What are the predicting variables that actually affect the life expectancy?
@@ -46,8 +58,6 @@ Inspiration from kaggle source data:
 6. Does drinking alchohol have a positive or negative relationship with Life Expectancy?
 7. Do densely populated countries tend to have lower life expectancy?
 8. What is the impact of Immunization coverage on life Expectancy?
-
-Final group decision:  TBD
 
 # Dataset Communication Protocols
 

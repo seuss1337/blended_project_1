@@ -8,6 +8,7 @@ cur = con.cursor()
 
 # The result of a "cursor.execute" can be iterated over by row
 
+
 for row in cur.execute('SELECT * FROM EXPECTANCY_TABLE LIMIT 10;'):
     print(row)
 
