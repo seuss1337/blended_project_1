@@ -6,6 +6,11 @@ import os.path
 import pandas as pd
 
 
+# Create a SQL connection to SQLite database
+con = sqlite3.connect(os.path.abspath("../../data/LIFE_EXPECTANCY_DB.db"))
+cur = con.cursor()
+
+
 def run():
     # Create a SQL connection to SQLite database
     con = sqlite3.connect("./data/LIFE_EXPECTANCY_DB.db")
