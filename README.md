@@ -9,7 +9,7 @@ Contributors:
 * https://github.com/jt-schmidt https://www.linkedin.com/in/jns04/
 
 ## Communication Protocols
-We communicated mainly through slack and occasionally text. 
+We communicated mainly through slack and occasionally text.
 
 ## Selected Topic: Life Expectancy Data Analysis
 
@@ -41,13 +41,13 @@ For this project we selected 2 data sets to merge. The first data we selected wa
 * Single table:  Happiness rank by scores and country in 2015 (158 rows x 12 columns, about 16.17 KB)
 * Table dated in 2015
 * 158 countries
-* Variety of factors such as economy GDP, family, health expectancy, freedom, etc. 
+* Variety of factors such as economy GDP, family, health expectancy, freedom, etc.
 * Happiness was measured on a scale of 1-10
 
 ![LIFE_EXPECTANCY_TABLE.png](https://github.com/seuss1337/blended_project_1/blob/feature/jt-schmidt/images/LIFE_EXPECTANCY_TABLE.png)
 
 ## Proposed Questions
-The question decided as a group was "What are the effect of urban population on happiness?" 
+The question decided as a group was "What are the effect of urban population on happiness?"
 
 Inspiration from kaggle source data:
 1. Do various predicting factors, which have been chosen initially, significantly impact the Life expectancy? What are the predicting variables that actually affect the life expectancy?
@@ -59,7 +59,7 @@ Inspiration from kaggle source data:
 7. Do densely populated countries tend to have lower life expectancy?
 8. What is the impact of Immunization coverage on life Expectancy?
 
-# Dataset Communication Protocols
+## Dataset Communication Protocols
 
 [Raw .csv](https://github.com/seuss1337/blended_project_1/blob/feature/jt-schmidt/data/Life%20Expectancy%20Data.csv) loaded into [database](https://github.com/seuss1337/blended_project_1/blob/feature/jt-schmidt/data/LIFE_EXPECTANCY_DB.db) using [SQLite3](https://www.sqlite.org/index.html).  
 [Python](https://www.python.org/) with [SQLite3 library](https://docs.python.org/3/library/sqlite3.html) and loaded to [Pandas dataframe](https://pandas.pydata.org/).
@@ -90,3 +90,10 @@ print(life_df.head(5))
 For the provisonal Machine Learning Model we created a simple linear regression model of the United States' life expectancy from 2000-2015. For the data input we used the year and the output was the life expectancy.
 
 ![Image](https://github.com/seuss1337/blended_project_1/blob/main/images/Linear%20Regression%20Model.png)
+
+## Presentation
+
+[Presentation Link](https://docs.google.com/presentation/d/1kdANWIdQBFkkx2d57EuJEQaUvLx16OFQzVCG5NjEvvA/edit?usp=sharing)
+
+## Dashboard
+[Dashboard Link](https://public.tableau.com/profile/jp4411#!/vizhome/ProjectDashboard_16109429557530/Dashboard3?publish=yes)
