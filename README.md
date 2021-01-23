@@ -49,6 +49,7 @@ For this project we selected 2 data sets to merge. The first data we selected wa
 ## Proposed Questions
 The question decided as a group was "What are the effect of urban population on happiness?"
 
+
 Inspiration from kaggle source data:
 1. Do various predicting factors, which have been chosen initially, significantly impact the Life expectancy? What are the predicting variables that actually affect the life expectancy?
 2. Should a country, having a lower life expectancy value(<65), increase its healthcare expenditure in order to improve its average lifespan?
@@ -87,13 +88,19 @@ con.close()
 print(life_df.head(5))
 ```
 ## Machine Learning Model
-For the provisonal Machine Learning Model we created a simple linear regression model of the United States' life expectancy from 2000-2015. For the data input we used the year and the output was the life expectancy.
+Week 1: For the provisonal Machine Learning Model we created a simple linear regression model of the United States' life expectancy from 2000-2015. For the data input we used the year and the output was the life expectancy.
 
 ![Image](https://github.com/seuss1337/blended_project_1/blob/main/images/Linear%20Regression%20Model.png)
 
+<<<<<<< HEAD
 ## Presentation
 
 [Presentation Link](https://docs.google.com/presentation/d/1kdANWIdQBFkkx2d57EuJEQaUvLx16OFQzVCG5NjEvvA/edit?usp=sharing)
 
 ## Dashboard
 [Dashboard Link](https://public.tableau.com/profile/jp4411#!/vizhome/ProjectDashboard_16109429557530/Dashboard3?publish=yes)
+=======
+Week 2: For the preliminary data preprocessing, the data for the world happiness and life expectancy only had one overlapping year. So the data was merged on country and removed all data that was not dated in 2015. The next step was to fill in the blanks with 0's. After filling in the data with 0's we decieded to use a logistic regression to predict the developing or developed country with the newly merged data and came up with and 85% accuracy. When creating the logistic regression, we set the y as the status of the developed/developing country and the x as all the other columns. The test data and training data was split into a normal 75% and 25%. Logisitic regression was used because the data allowed us to label the developed/developing countries into 1's and 0's. 
+
+![Image](https://github.com/seuss1337/blended_project_1/blob/feature/duc/images/Logistic_Regression_Prediction.png)
+>>>>>>> feature/duc
