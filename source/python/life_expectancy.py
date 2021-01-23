@@ -96,8 +96,10 @@ happy_results = session.query(
     Happiness.ID,
     Happiness.COUNTRY,
     Happiness.REGION,
-    Happiness.HAPPINESS_RANK,
     Happiness.HAPPINESS_SCORE,
+    Happiness.HAPPINESS_RANK,
+    Happiness.LOW_CONF,
+    Happiness.HIGH_CONF,    
     Happiness.STANDARD_ERROR,
     Happiness.ECONOMY,
     Happiness.FAMILY,
@@ -105,7 +107,8 @@ happy_results = session.query(
     Happiness.FREEDOM,
     Happiness.TRUST,
     Happiness.GENEROSITY,
-    Happiness.DYSTOPIA
+    Happiness.DYSTOPIA,
+    Happiness.YEAR
     ).all()
 
 #for temp_result in happy_results:
@@ -113,6 +116,8 @@ happy_results = session.query(
 
 # Convert Happiness list to dataframe
 happy_df = pd.DataFrame(happy_results, columns=Happiness_columns)
+happy_df = happy_df.rename(columns={"HAPPINESS_SCORE":"HAPPINESS_RANK","HAPPINESS_RANK":"HAPPINESS_SCORE"})
+
 print('Happiness Dataframe')
 print(happy_df)
 
@@ -146,11 +151,13 @@ happy_expect_join = session.query(
     Expectancy.THIN_5TO9_YR,
     Expectancy.INC_COMPOSITION,
     Expectancy.SCHOOLING,
-    Happiness.ID.label('H_ID'),
+    Happiness.ID,
     Happiness.COUNTRY,
     Happiness.REGION,
-    Happiness.HAPPINESS_RANK,
     Happiness.HAPPINESS_SCORE,
+    Happiness.HAPPINESS_RANK,
+    Happiness.LOW_CONF,
+    Happiness.HIGH_CONF,    
     Happiness.STANDARD_ERROR,
     Happiness.ECONOMY,
     Happiness.FAMILY,
@@ -158,13 +165,14 @@ happy_expect_join = session.query(
     Happiness.FREEDOM,
     Happiness.TRUST,
     Happiness.GENEROSITY,
-    Happiness.DYSTOPIA
+    Happiness.DYSTOPIA,
+    Happiness.YEAR
 ).join(Happiness, func.lower(Expectancy.COUNTRY) == func.lower(Happiness.COUNTRY)
-).filter(Expectancy.YEAR == '2015').all()
+).filter(Expectancy.YEAR == '2015'
+).filter(Happiness.YEAR == '2015').all()
 
 happy_expect_join_df = pd.DataFrame(happy_expect_join, columns=happy_expect_join_columns)
 
-print('Expectancy and Happiness Joined Dataframe')
 print(happy_expect_join_df)
 
 # Columns of the joined data between Expectancy & Happiness
