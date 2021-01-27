@@ -95,6 +95,7 @@ Week 1: For the provisonal Machine Learning Model we created a simple linear reg
 
 Week 2: For the preliminary data preprocessing, the data for the world happiness and life expectancy only had one overlapping year. So the data was merged on country and removed all data that was not dated in 2015. The next step was to fill in the blanks with 0's. After filling in the data with 0's we decieded to use a logistic regression to predict the developing or developed country with the newly merged data and came up with and 85% accuracy. When creating the logistic regression, we set the y as the status of the developed/developing country and the x as all the other columns. The test data and training data was split into a normal 75% and 25%. Logisitic regression was used because the data allowed us to label the developed/developing countries into 1's and 0's. 
 
+![Image](https://github.com/seuss1337/blended_project_1/blob/feature/duc/images/Logistic_Regression_Prediction.png)
 
 Week 3: We were able find a solution to our data's unmatched years. With the help from the instructor we were able generate 100 data for each country for both datasets using explode. By using the explode method we randomly generated data within the mean and standard deviation for each country and merged the datasets together. Instead of having about 200 rows of data we now have about 10,000. With this new updateed dataframe we were able to create a linear regression to predict the happiness score. The y is our happiness score. For the x we used the  following coloumns: Life expectancy, Adult Mortality,infant deaths, Alcohol, percentage expenditure, Hepatitis B,Measles, BMI, under-five deaths, Polio, Total expenditure,Diphtheria, HIV/AIDS, GDP, Population, thinness  1-19 years,thinness 5-9 years, Income composition of resources, Schooling,Happiness Rank,Lower Confidence Interval,Upper Confidence Interval, Economy (GDP per Capita), Family,Health (Life Expectancy), Freedom, Trust (Government Corruption),Generosity, Dystopia Residual. We changed this because we were overcome our data shortage and accurately predict the happiness rank for 2020 and create a feature importance. Since it is a linear regression we do no have an accuracy score.
 
@@ -102,7 +103,6 @@ Week 3: We were able find a solution to our data's unmatched years. With the hel
 
 ![image](https://github.com/seuss1337/blended_project_1/blob/feature/duc/images/Feature%20Importance%20Graph.png)
 
-![Image](https://github.com/seuss1337/blended_project_1/blob/feature/duc/images/Logistic_Regression_Prediction.png)
 =======
 ## Presentation
 
