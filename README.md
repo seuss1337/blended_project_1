@@ -99,7 +99,7 @@ Week 2: For the preliminary data preprocessing, the data for the world happiness
 =======
 ## Presentation
 
-[Presentation Link](https://docs.google.com/presentation/d/1kdANWIdQBFkkx2d57EuJEQaUvLx16OFQzVCG5NjEvvA/edit?usp=sharing)
+[Presentation Link](https://github.com/seuss1337/blended_project_1/blob/feature/jt-schmidt/Final%20Project%20Presentation.pdf)
 
 ## Dashboard
 [Dashboard Link](https://public.tableau.com/profile/jp4411#!/vizhome/ProjectDashboard_16109429557530/Dashboard3?publish=yes)
